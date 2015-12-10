@@ -1,4 +1,4 @@
-# Cookbook Name:: sbp_wireshark
+# Cookbook Name:: wireshark
 # Attributes:: winpcap
 #
 # Copyright 2013, Schuberg Philis

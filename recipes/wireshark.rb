@@ -1,4 +1,4 @@
-# Cookbook Name:: sbp_wireshark
+# Cookbook Name:: wireshark
 # Recipe:: wireshark
 #
 # Copyright 2013, Schuberg Philis

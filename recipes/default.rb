@@ -6,5 +6,9 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-include_recipe "wireshark::wireshark"
-include_recipe "wireshark::winpcap"
+if platform?("windows")
+  include_recipe "wireshark::windows_install"
+end
+if platform?("ubuntu")
+  include_recipe "wireshark::source_install"
+end

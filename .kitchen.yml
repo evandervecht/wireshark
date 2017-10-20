@@ -9,10 +9,18 @@ platforms:
   - name: windows-2012r2
     transport:
         name: winrm
-
+  - name: centos-7.2
+  - name: ubuntu-16.04
 
 suites:
   - name: default
     run_list:
       - recipe[wireshark::default]
+    includes:
+      - windows-2012r2
     attributes:
+  - name: unix_or_linux
+    run_list:
+      - recipe[wireshark::default]
+    excludes:
+      - windows-2012r2
